@@ -71,3 +71,16 @@
   </table>
 
 <h3>Add a new comment </h3>
+
+<form action="/insert_comment_record">
+  <label for="input_photo_id">Photo ID</label>
+  <input id="input_photo_id" type="text" value="<%= @the_photo.id %>" name="input_photo_id">
+
+  <label for="author_id">Author ID</label>
+  <input id="author_id" type="text" name="author_id">
+
+  <label for="input_body">Comment</label>
+  <textarea id="input_body" name="input_body" placeholder="Enter a comment..."></textarea>
+
+  <button>Add comment</button>
+</form>
